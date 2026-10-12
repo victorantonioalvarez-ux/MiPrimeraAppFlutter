@@ -1,30 +1,16 @@
 import 'package:flutter/material.dart';
+import 'contador_page.dart';
 
-class HomePage extends StatelessWidget{
-  final estil = TextStyle(fontSize: 24);
+
+class MyApp extends StatelessWidget{
+
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Contador"),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Nombre de clicks", style: estil),
-            Text("0", style: estil),
-          ],
-          
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          print("Uep, com anam");// Voy por el punto 6
-        },
-        child: Icon(Icons.add),
-      ),
+  Widget build(context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Center(
+        child: ContadorPage(),
+      )
     );
   }
 }
