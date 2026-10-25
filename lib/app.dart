@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'contador_page.dart';
+import "pages/contador_page.dart";
 
-
-class MyApp extends StatelessWidget{
-
+class SaMevaApp extends StatelessWidget {
   @override
   Widget build(context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Center(
         child: ContadorPage(),
-      )
+      ),
     );
   }
 }
